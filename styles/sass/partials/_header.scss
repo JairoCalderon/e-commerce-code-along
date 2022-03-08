@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    background-color: $terciary;
+    
+    .headerImgContainer{
+        width: 45%;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .headerContent{
+        width: 55%;
+
+        .contentContainer{
+            width: 65%;
+            margin: 0 auto;
+        }
+        
+    }
+}
