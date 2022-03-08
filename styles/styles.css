@@ -674,3 +674,70 @@ footer .social a {
 footer .social a:hover, footer .social a:focus {
   color: blue;
 }
+
+@media (max-width: 1000px) {
+  footer .footerFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 100px;
+  }
+  footer .newsletter {
+    width: 50%;
+    margin: 0 0 30px 0;
+  }
+  footer .footerNav {
+    width: 80%;
+  }
+  footer .footerNav nav ul {
+    width: auto;
+  }
+}
+@media (max-width: 800px) {
+  footer .newsletter {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .announcements {
+    display: none;
+  }
+
+  .slideOutNav .mainMenu a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  footer .footerFlexContainer {
+    margin-bottom: 60px;
+  }
+  footer .footerNav nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .footerNav ul {
+    margin-bottom: 24px;
+  }
+  footer .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .socialIcons {
+    margin-bottom: 30px;
+  }
+}
