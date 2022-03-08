@@ -566,6 +566,33 @@ header .headerContent .contentContainer {
   margin: 0 auto;
 }
 
+.gallery {
+  background-color: #f8fbf3;
+  padding: 90px 0;
+  margin: 0;
+}
+.gallery h2 {
+  max-width: 500px;
+}
+
+.galleryItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.galleryItems .item {
+  width: 15%;
+}
+.galleryItems .item img {
+  max-width: 100%;
+  display: block;
+}
+
 footer {
   background-color: #084b6d;
   color: #fff;
@@ -641,4 +668,9 @@ footer .social {
 footer .social a {
   font-size: 1.2rem;
   margin: 0 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .social a:hover, footer .social a:focus {
+  color: blue;
 }
