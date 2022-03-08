@@ -565,3 +565,80 @@ header .headerContent .contentContainer {
   width: 65%;
   margin: 0 auto;
 }
+
+footer {
+  background-color: #084b6d;
+  color: #fff;
+  padding: 90px 0 50px 0;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+footer .footerFlexContainer h4 {
+  color: #fff;
+}
+footer .newsletter {
+  width: calc(40% - 50px);
+  margin-right: 50px;
+}
+footer .newsletter form {
+  position: relative;
+}
+footer .newsletter input {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  line-height: 3rem;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+footer .newsletter input:focus {
+  border: 2px solid #fff;
+}
+footer .newsletter .secondary {
+  position: absolute;
+  right: 5px;
+  top: 10%;
+}
+footer .footerNav {
+  width: 40%;
+}
+footer .footerNav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerNav nav ul {
+  width: 33.3333333333%;
+}
+footer .footerNav a {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+footer .footerNav a:hover, footer .footerNav a:focus {
+  color: #fff;
+}
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .social a {
+  font-size: 1.2rem;
+  margin: 0 10px;
+}

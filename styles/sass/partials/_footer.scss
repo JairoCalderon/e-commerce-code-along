@@ -1,0 +1,84 @@
+footer{
+    background-color: $primary;
+    color: $solidWhite;
+    padding: 90px 0 50px 0;
+
+    .footerFlexContainer{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        h4{
+            color: $solidWhite;
+        }
+    }
+
+    .newsletter{
+        width: calc(40% - 50px);
+        margin-right: 50px;
+
+        form {
+            position: relative;
+        }
+
+        input{
+            background-color: transparent;
+            color: $solidWhite;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.8rem;
+            line-height: 3rem;
+            padding: 0px 10px;
+            margin-bottom: 20px;
+            width: 100%;
+
+            &:focus{
+                border: 2px solid $solidWhite;
+            }
+        }
+
+        .secondary{
+            position: absolute;
+            right: 5px;
+            top: 10%;
+        }
+    }
+
+    .footerNav{
+        width: 40%;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+            ul{
+                width: calc(100% / 3);
+            }
+        }
+
+        a{
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+
+            &:hover,
+            &:focus{
+                color: $solidWhite;
+            }
+        }
+    }
+    .social{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            font-size: 1.2rem;
+            margin: 0 10px;
+            transition: 0.2s;
+
+            &:hover,
+            &:focus{
+                color: &quinary;
+            }
+        }
+    }
+}
