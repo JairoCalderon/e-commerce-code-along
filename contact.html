@@ -73,49 +73,54 @@
         <section class="mapForm">
             <div class="wrapper">
                 <div class="mapFormContainer">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4325.6495520660665!2d-79.39837049565337!3d43.647653438183944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35243e845b5b%3A0xdd33d7f046a0ba35!2sToybox!5e0!3m2!1sen!2sca!4v1646855922181!5m2!1sen!2sca"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        title="map to Toybox">
-                    </iframe>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4325.6495520660665!2d-79.39837049565337!3d43.647653438183944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35243e845b5b%3A0xdd33d7f046a0ba35!2sToybox!5e0!3m2!1sen!2sca!4v1646855922181!5m2!1sen!2sca"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            title="map to Toybox">
+                        </iframe>
+                    </div>
+
+
+                    <form action="#" method="POST" class="contactForm">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="NAME">
+
+                        <label for="surname" class="sr-only">Surname</label>
+                        <input type="text" id="surname" placeholder="SURNAME">
+
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="EMAIL">
+
+                        <label for="phone" class="sr-only">Phone</label>
+                        <input type="tel" id="phone" placeholder="PHONE">
+
+                        <select name="reason" id="reason">
+                            <option value="initial" disabled selected>
+                                Reason for contacting
+                            </option>
+                            <option value="refund">
+                                Refund request
+                            </option>
+                            <option value="status">
+                                Order status update
+                            </option>
+                            <option value="praise">
+                                Praise!
+                            </option>
+                            <option value="complaint">
+                                General concerns
+                            </option>
+                        </select>
+
+                        <label for="message" class="sr-only">Message for me</label>
+                        <textarea name="message" id="message" cols="30" row="10"
+                            placeholder="Message for me"></textarea>
+
+                        <button>Send Message</button>
+
+                    </form>
                 </div>
-                <form action="#" method="POST" class="contactForm">
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" placeholder="NAME">
-
-                    <label for="surname" class="sr-only">Surname</label>
-                    <input type="text" id="surname" placeholder="SURNAME">
-
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" placeholder="EMAIL">
-
-                    <label for="phone" class="sr-only">Phone</label>
-                    <input type="tel" id="phone" placeholder="PHONE">
-
-                    <select name="reason" id="reason">
-                        <option value="initial" disabled selected>
-                            Reason for contacting
-                        </option>
-                        <option value="refund">
-                            Refund request
-                        </option>
-                        <option value="status">
-                            Order status update
-                        </option>
-                        <option value="praise">
-                            Praise!
-                        </option>
-                        <option value="complaint">
-                            General concerns
-                        </option>
-                    </select>
-
-                    <label for="message" class="sr-only">Message for me</label>
-                    <textarea name="message" id="message" cols="30" row="10" placeholder="Message for me"></textarea>
-
-                    <button>Send Message/button>
-
-                </form>
             </div>
         </section>
 

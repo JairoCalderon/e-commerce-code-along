@@ -1,0 +1,62 @@
+.mapFormContainer{
+    display: flex;
+    .map{
+        width: 50%;
+        flex-wrap: wrap;
+
+        .iframe{
+            width: 100%;
+        }
+    }
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 70px);
+    margin-left: 70px;
+}
+
+input, textarea{
+    padding: 0 0 10px 5px;
+    border: none;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: $bodyFont;
+    
+    &::placeholder{
+        font-size: 0.8rem;
+        color: $primary;
+        line-height: 1.2rem;
+        opacity: 1;
+    }
+}
+
+input{
+    border-bottom: 1px solid #eee;
+}
+
+textarea{
+    min-height: 130px;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+select{
+    appearance: none;
+    font-family: $bodyFont;
+    color: $primary;
+    padding: 0 0 10px 0;
+    background-color: $solidWhite;
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+
+}
+
+option{
+    font-family: $bodyFont;
+}
