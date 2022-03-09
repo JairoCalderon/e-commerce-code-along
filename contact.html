@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/efe97b2b87.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>STARTER - Toybox Homepage</title>
+    <title>Contact</title>
 </head>
+
 
 <body>
     <div class="announcements">
@@ -32,7 +33,7 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">News</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                     <hr>
                     <ul class="legal">
@@ -42,7 +43,7 @@
                     </ul>
                 </nav>
             </div>
-            <a href="#" class="logo">
+            <a href="./index.html" class="logo">
                 <h1>Toybox</h1>
             </a>
             <div class="searchCart">
@@ -58,24 +59,66 @@
             </div>
         </div>
     </nav>
-
-    <header>
-        <div class="headerImgContainer wrapper">
-            <img src="./assets/header-image.jpg"
-                alt="A child in overalls playing with colourful wooden blocks on the floor">
-        </div>
-        <div class="headerContent wrapper">
-            <div class="contentContainer">
-                <h5>Handcrafted for kids</h5>
-                <h3>Go on, let them play with wooden blocks.</h3>
-                <p>Sed gravida eu ac aliquam pellentesque pharetra pharetra. Augue nam facilisis tristique turpis
-                    iaculis pulvinar tellus.</p>
-                <button>Shop All</button>
+    <header class="contactHeader">
+        <div class="wrapper">
+            <div class="contactContent">
+                <h5>Contact</h5>
+                <h3>We're here to help</h3>
+                <p>Any other questions? Reach out at <a href="mailto:support@toybox.io">support@toybox.io</a></p>
             </div>
         </div>
     </header>
 
     <main>
+        <section class="mapForm">
+            <div class="wrapper">
+                <div class="mapFormContainer">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4325.6495520660665!2d-79.39837049565337!3d43.647653438183944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35243e845b5b%3A0xdd33d7f046a0ba35!2sToybox!5e0!3m2!1sen!2sca!4v1646855922181!5m2!1sen!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        title="map to Toybox">
+                    </iframe>
+                </div>
+                <form action="#" method="POST" class="contactForm">
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" placeholder="NAME">
+
+                    <label for="surname" class="sr-only">Surname</label>
+                    <input type="text" id="surname" placeholder="SURNAME">
+
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" placeholder="EMAIL">
+
+                    <label for="phone" class="sr-only">Phone</label>
+                    <input type="tel" id="phone" placeholder="PHONE">
+
+                    <select name="reason" id="reason">
+                        <option value="initial" disabled selected>
+                            Reason for contacting
+                        </option>
+                        <option value="refund">
+                            Refund request
+                        </option>
+                        <option value="status">
+                            Order status update
+                        </option>
+                        <option value="praise">
+                            Praise!
+                        </option>
+                        <option value="complaint">
+                            General concerns
+                        </option>
+                    </select>
+
+                    <label for="message" class="sr-only">Message for me</label>
+                    <textarea name="message" id="message" cols="30" row="10" placeholder="Message for me"></textarea>
+
+                    <button>Send Message/button>
+
+                </form>
+            </div>
+        </section>
+
         <section class="gallery" id="gallery">
             <div class="wrapper">
                 <h5>Follow Us</h5>
@@ -102,9 +145,7 @@
                 </div> <!-- .galleryItems END -->
             </div> <!-- .wrapper END -->
         </section> <!-- .instaGallery END -->
-
     </main>
-
     <footer id="footer">
         <div class="wrapper">
             <div class="footerFlexContainer">
@@ -203,10 +244,6 @@
             </div> <!-- .social END -->
         </div> <!-- .wrapper END-->
     </footer>
-
-
-
-
 </body>
 
 </html>
