@@ -791,6 +791,8 @@ select {
   font-size: 0.8rem;
   line-height: 1.2rem;
   text-transform: uppercase;
+  background: url(../assets/caret-down-solid.svg)/20px no-repeat;
+  background-position: 95% center;
 }
 
 option {
@@ -817,6 +819,15 @@ option {
   }
   footer .footerNav nav ul {
     width: auto;
+  }
+
+  .maoFormContainer .map {
+    width: 45%;
+  }
+
+  .contactForm {
+    width: calc(55% - 50px);
+    margin-left: 50px;
   }
 }
 @media (max-width: 800px) {
@@ -880,5 +891,9 @@ option {
   }
   footer .socialIcons {
     margin-bottom: 30px;
+  }
+
+  .mapFormContainer .map {
+    width: 100%;
   }
 }

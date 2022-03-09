@@ -54,7 +54,8 @@ select{
     font-size: 0.8rem;
     line-height: 1.2rem;
     text-transform: uppercase;
-
+    background: url(../assets/caret-down-solid.svg) / 20px no-repeat;
+    background-position: 95% center;
 }
 
 option{

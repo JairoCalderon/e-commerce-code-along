@@ -20,6 +20,15 @@
             }
         }
     }
+    .maoFormContainer{
+        .map{
+            width: 45%;
+        }
+    }
+    .contactForm{
+        width: calc(55% - 50px);
+        margin-left: 50px;
+    }
 }
 
 @media(max-width: 800px){
@@ -78,6 +87,11 @@
 
         .socialIcons{
             margin-bottom: 30px;
+        }
+    }
+    .mapFormContainer{
+        .map{
+            width: 100%;
         }
     }
 }
